@@ -1,0 +1,10 @@
+| Роль   | Права роли                                | Группы пользователей |
+| ------ | ----------------------------------------- | -------------------- |
+| admin  | Полный доступ к ресурсам внутри namespace | Админы               |
+| reader | Чтение ресурсов внутри namespace          | Наблюдатели          |
+| writer | Изменение ресурсов внутри namespace       | Разработчики         |
+
+Создание ролей
+kubectl create serviceaccount admin -n default
+kubectl create serviceaccount reader -n default
+kubectl create serviceaccount writer -n default
